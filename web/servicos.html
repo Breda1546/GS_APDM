@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/servicos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <span class="material-icons">psychology</span>
+        <h1 class="titulo">Smart Deliver</h1>
+        <nav>
+            <ul>
+                <li>
+                    <span class="material-icons">home</span>
+                    <a href="./index.html">Página inicial</a>
+                </li>
+                <li>
+                    <span class="material-icons">trending_up</span>
+                    <a href="./beneficios.html">benefícios</a>
+                </li>
+                <li>
+                    <span class="material-icons">group</span>
+                    <a href="./sobre.html">sobre nós</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <p>Oq podemos oferecer</p>
+    </div>
+
+    <div id="servicos">
+        <h1 class="titulo">Nossos serviços</h1>
+        <span>
+            Nossa empresa está dedicada para que as pessoas recebam suas encomendas de maneira barata, rapida
+            e segura. Para melhorar o dia dos nossos consumidores.
+            Nós oferecemos os seguintes planos:
+        </span>
+        <ul id="list_servicos">
+            <li>
+                <h2 class="titulo">My Own Drone</h2>
+                <span>
+                    Use um ou mais drones somente seus, para realizar a busca e entrega das suas encomendas, sem a ajuda de terceiros.
+                </span>
+                <span><b>Por apenas R$400,00/mês com acesso a 2 drones</b></span>
+            </li>
+            <li>
+                <h2 class="titulo">Shared Delivery</h2>
+                <span>
+                    Você pode compatilhar o seu drone com até 5 pessoas,
+                    dividindo as despezas e recebendo suas encomendas de maneira rapida e eficiente.
+                </span>
+                <span><b>Por apenas R$250,00/mês com acesso a 1 drone</b></span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="button">
+        <a href="./index.html"
+            style="display: flex;">
+            <span class="material-icons">
+                arrow_back_ios
+            </span>
+            <span>voltar</span>
+        </a>
+    </div>
+
+    <div id="calculadora_frete"> 
+        <h1 class="titulo">Calcular frete:<br></h1>
+        <span>Digite alguma cidade para ver o valor do frete com a nossa empresa.</span>
+        <span>Aviso: valor pode mudar dependendo de cidade e clima da região</span>
+        <input type="text" id="pesquisar" name="frete">
+        <input class="button" type="submit" value="Calcular" onclick="calcular()">
+    </div>
+
+    <div class="contato">
+        <span>
+            Caso deseja assinar nossos serviços contate:<br><br>
+            Email: <b>contato@smartdelivery.com.br</b><br><br>
+            Telefone: <b>(11) 99999-9999</b><br><br>
+            WhatsApp: <b>(11) 12345-6789</b><br><br>
+        </span>
+    </div>
+</body>
+<script src="./scripts/frete.js"></script>
+</html>

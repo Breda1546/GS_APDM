@@ -1,0 +1,16 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo2{
+    border-left: var(--destak) solid 5px;
+    padding-left: .4em;
+    margin: 5px;
+    text-align: left;
+
+    border-right: var(--destak) solid 5px;
+    padding-left: .4em;
+    margin: 5px;
+    text-align: right;
+}

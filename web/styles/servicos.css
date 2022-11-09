@@ -1,0 +1,73 @@
+div{
+    display: flex;
+    flex-direction: column;
+    margin: 2.1em;
+}
+
+div h1{
+    font-size: 2.5em;
+}
+
+div span{
+    font-size: 1em;
+}
+
+#list_servicos{
+    display: flex;
+    flex-direction: column;
+}
+
+#list_servicos li{
+    list-style: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: var(--bg-secondary);
+    padding: 2em;
+    border-radius: .6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#list_servicos h2{
+    margin-top: 0;
+}
+
+#mini_caixa li{
+    list-style: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: var(--bg-secondary);
+    padding: 2em;
+    border-radius: .6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 25vw;
+}
+
+#mini_caixa span{
+    font-style: italic;
+    font-size: .8em;
+}
+
+.label{
+    font-size: 1em;
+}
+
+#calculadora_frete{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+#calculadora_frete span{
+    font-style: italic;
+    font-size: .8em;
+}
+
+#pesquisar{
+    margin: 3em 3em 3em 0;
+    height: 3vh;
+    font-family: var(--font-primary);
+}

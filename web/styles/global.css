@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+:root{
+    --bg-primary: #2D2D2D;
+    --bg-secondary: gray;
+    --bg-header: black;
+    --default: #fff;
+    --destak: #FF0066;
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--bg-primary);
+    color: var(--default);
+    font-family: var(--font-primary);
+}
+
+header{
+    display: flex;
+    flex: 1;
+    background-color: var(--bg-header);
+    align-items: center;
+}
+
+.hero{
+    font-family: var(--font-hero);
+    height: 15rem;
+    position: relative;
+}
+
+.hero::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2019/07/20190729092949-1691x450.jpg');
+    position: absolute;
+    background-size: cover;
+    z-index: -1;
+    filter: opacity(.4);
+    box-shadow: inset 100px -180px 250px var(--bg-df-primary);
+}
+
+.hero p{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 3.6rem;
+    letter-spacing: 0.04em;
+    text-shadow: 0px 4px 4px var(--bg-header);
+    padding: .3rem 1.5rem;
+    text-align: center;
+}
+
+nav{ 
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav li{
+    list-style: none;
+    padding: .6em;
+}
+
+nav a{
+    color: var(--default);
+    text-decoration: none;
+}
+
+.titulo{
+    border-left: var(--destak) solid 5px;
+    padding-left: .4em;
+    margin: 5px;
+    text-align: left;
+}
+
+.caixa{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: var(--bg-secondary);
+    height: 20vw;
+}
+
+span{
+    text-decoration: none;
+    color: var(--default);
+    text-shadow: 0px 1.6px 1.6px var(--bg-header);
+}
+
+.caixa span{
+    width: 50vw;
+}
+
+.caixa div{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.caixa img{
+    max-width: 500px;
+    height: 30vh;
+    border-radius: 1em;
+    position: absolute;
+}
+
+.posi1{
+    top: 480px;
+    left: 750px;
+}
+
+.posi2{
+    top: 850px;
+    left: 750px;
+}
+
+.posi4{
+    top: 1220px;
+    left: 750px;
+}
+
+.posi5{
+    justify-items: center;
+    position: absolute;
+    top: 450px;
+    left: 940px;
+}
+
+.button{
+    background-color: var(--destak);
+    padding: .5rem 1.5rem;
+    width: fit-content;
+    border-radius: .6em;
+    justify-items: center;
+    margin: 1em;
+    transition: .5s;
+    flex-wrap: nowrap;
+    text-decoration: none;
+}
+
+.button:hover{
+    box-shadow: 0 0 10px var(--destak);
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: var(--bg-secondary);
+    height: 10vw;
+}
+
+::selection{
+    background-color: var(--destak);
+}
